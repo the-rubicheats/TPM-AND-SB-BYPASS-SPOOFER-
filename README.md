@@ -1,5 +1,5 @@
 # SOMENTE FUNCIONA PARA WINDOWS 10 22H2
-## STATUS - Desconhecido
+## STATUS - Funcionando!
 
 ### REQUISITOS
 
