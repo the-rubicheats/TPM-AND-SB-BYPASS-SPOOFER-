@@ -34,7 +34,7 @@ FLASH SUA BIOS PARA UMA VERSÃO DIFERENTE. (GOOGLE -- "NOME DA SUA PLACA-MÃE" d
 ##### PASSO 7.1 [para aqueles que não sabem como fazer spoof]:
 (RECOMENDO FAZER O PASSO 7.2 em vez disso)
 
-Baixe ISTO (crédito @WH12)
+Baixe [ISTO](./spoof.exe)
 1. Clique em refresh, tire uma captura de tela do HWID.
 2. Clique em spoof. Então seu PC irá reiniciar.
 3. Abra novamente, clique em refresh, verifique se tudo mudou.
