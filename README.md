@@ -65,3 +65,55 @@ Download THIS (credit @WH12)
     echo Press any key to get your hardware serials again.
     pause>nul
     goto start
+```
+
+2- Take a screenshot.
+3- Download RUFUS
+4- Select your USB drive, Select non-bootable and change the partition style to GPT. Click start.
+3- Download THIS
+4-open startup.nsh file, and change all the HWID's to something random like this
+
+```batch
+    AMIDEEFIx64.efi /BS VCXZBHJSDGFYUASVDF          <--- ANYTHING RANDOM(any length), DO THIS FOR ALL THE COMMANDS
+    except   AMIDEEFIx64.efi /SU AUTO
+```
+
+5 Now paste them into your USB drive . It should look something like this.
+
+```batch
+    USB:
+           efi
+           afuefix64.efi
+           amideefix64.efi
+           Startup.nsh
+```
+
+6-Now, restart and go into your BIOS.
+7-Go into your BOOT ORDER
+8-Assign the #1 BOOT PRIORITY (or something like that) to your USB.
+9-Then boot from your USB.
+10-It will start to spoof your PC (<5 seconds) and your windows will open automatically.
+11-Compare your MOTHERBOARD SerialNumber and UUID.
+12-If changed, you have successfully spoofed your PC.
+13-If not, open the startup.nsh file inside the EFI folder.
+14-Replace all the code with this.
+
+```batch
+    fs0:
+    startup.nsh
+```
+15-Still not ? change all the amideefix64.efi into afuefix64.efi and try again. Like this.
+```batch
+    AMIDEEFIx64.efi /BS VCXZBHJSDGFYUASVDF    
+    to
+    afuefix64.efi /BS VCXZBHJSDGFYUASVDF    (do this for both startup.nsh files)
+```
+
+#### STEP 8:
+run cmd as admin, paste
+```batch
+    bcdedit /set hypervisorlaunchtype off
+```
+
+#### YOU CAN CONTINUE USING UR OLD ACCOUNT (in some cases, old accounts will get a TPM prompt:
+Download VALORANT and enjoy 
