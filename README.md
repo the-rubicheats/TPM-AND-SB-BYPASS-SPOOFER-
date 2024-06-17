@@ -41,3 +41,27 @@ Download THIS (credit @WH12)
 4. If not, follow STEP 7.2 (You can still follow it even if STEP 7.1 worked, for good measures).
 
 ##### STEP 7.2 [for those who don't know how to spoof EFI METHOD]:
+
+1. Make a .bat file and put this code inside it and run it.
+
+```batch
+    ECHO OFF
+    TITLE UC CHECKER
+    ECHO **********************************
+    Color 0F
+    ECHO **********************************
+    :start
+    cls
+    wmic diskdrive get model, serialnumber
+    ECHO CPU 
+    wmic cpu get serialnumber
+    ECHO BIOS
+    wmic bios get serialnumber
+    ECHO Motherboard
+    wmic baseboard get serialnumber
+    ECHO smBIOS UUID
+    wmic path win32_computersystemproduct get uuid
+    getmac
+    echo Press any key to get your hardware serials again.
+    pause>nul
+    goto start
