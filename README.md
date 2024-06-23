@@ -71,7 +71,7 @@ Baixe [ISTO](./spoof.exe)
 2-Tire uma captura de tela.
 3-Baixe o RUFUS.
 4-Selecione seu drive USB, selecione não inicializável e mude o estilo de partição para GPT. Clique em iniciar.
-3-Baixe ISTO.
+3-Baixe EFI_Spoofer.
 
 4-Abra o arquivo startup.nsh, e mude todos os HWID's para algo aleatório como isto (LEMBRE-SE, HÁ 2 ARQUIVOS startup.nsh)
 ```batch
